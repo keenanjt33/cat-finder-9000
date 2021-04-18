@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.slide-arrow {
+  color: white;
+  cursor: pointer;
+  font-size: 3rem;
+  position: absolute;
+  /* position: absolute; */
+  /* position: fixed; */
+  /* top: 50%; */
+}
+
+.slide-arrow.right {
+  position: absolute;
+  top: 50%;
+  right: 2rem;
+  transform: translate(+50%, -50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.slide-arrow.left {
+  position: absolute;
+  top: 50%;
+  left: 2rem;
+  transform: translate(-50%, -50%);
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+.carousel {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.carousel-wrapper {
+  width: 100%;
+  height: calc(100vw * 0.6 + 1.2em);
+  margin-bottom: 1rem;
+}
+.carousel img {
+  object-fit: cover;
+  max-width: 100%;
+  object-position: center; /* Center the image within the element */
+  width: 100%;
+  height: calc(100vw * 0.6);
+}
+@media screen and (min-width: 980px) {
+  .carousel img {
+    height: calc(980px * 0.6);
+  }
+  .carousel-wrapper {
+    height: calc(980px * 0.6 + 1.2em);
+  }
+}
