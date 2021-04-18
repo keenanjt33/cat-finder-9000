@@ -2,6 +2,7 @@ const createError = require('http-errors');
 const express = require('express');
 const logger = require('morgan');
 const bodyParser = require('body-parser');
+const path = require('path');
 
 const { cats } = require('./placeholder-data/cats.js');
 const { images } = require('./placeholder-data/images.js');
@@ -14,6 +15,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
+app.use(express.static(path.resolve(__dirname, './client/build')));
 
 app.get('/api/search', async (req, res) => res.send(JSON.stringify(cats)));
 
