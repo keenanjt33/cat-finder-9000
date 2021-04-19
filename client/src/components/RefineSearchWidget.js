@@ -201,7 +201,7 @@ class RefineSearchWidget extends React.Component {
     return (
       <div className='mx-10 md:col-span-3'>
         Filter Results:
-        <div className='mb-10 text-black space-x-4'>
+        <div className='mb-10 text-black'>
           <DropdownButton
             buttonText={'Sort By'}
             dropdownIndex={0}
@@ -287,7 +287,7 @@ const FilterCard = props => {
 
 const DropdownButton = props => {
   return (
-    <div className='inline-block mt-4'>
+    <div className='inline-block mt-4 mr-4'>
       <button
         onClick={() => props.handleDisplayToggle(props.dropdownIndex)}
         className='py-2 bg-purple-300 rounded shadow-inner px-7 '
