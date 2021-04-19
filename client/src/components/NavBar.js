@@ -9,7 +9,7 @@ class NavBar extends React.Component {
           <Logo className="w-8 h-8 mr-2"/>
          <span className="text-xl font-semibold tracking-tight">Cat Finder 9000</span>
        </a>
-        <a href='//github.com' className="items-end mx-10">
+        <a href='https://github.com/keenanjt33/cat-finder-9000' className="items-end mx-10">
           <svg
             xmlns="http://www.w3.org/2000/svg"
             viewBox="0 0 16 16"

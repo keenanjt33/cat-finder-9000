@@ -187,7 +187,7 @@ class SearchPage extends React.Component {
         <div className="flex justify-center mt-5 content-evenly lg:mx-20">
           {this.state.pageNumber > 1 &&
             <button
-              className="px-8 py-2 border-2 rounded shadow-inner border-secondary hover:bg-secondary"
+              className="px-8 py-2 border-2 rounded shadow-inner m1-20 border-secondary hover:bg-secondary"
               onClick={this.handlePrevious}
             >
               Previous
@@ -195,7 +195,7 @@ class SearchPage extends React.Component {
           }
           {this.state.pageNumber < this.state.numPages &&
             <button
-              className="px-8 py-2 border-2 rounded shadow-inner border-secondary hover:bg-secondary"
+              className="px-8 py-2 mt-10 border-2 rounded shadow-inner border-secondary hover:bg-secondary"
               onClick={this.handleNext}
             >
               Next

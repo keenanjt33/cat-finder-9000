@@ -36,7 +36,7 @@ class ReachRouter extends React.Component {
           authenticated={authenticated}
           deauthenticate={this.deauthenticate}
         />
-        <Router>
+        <Router style={{minHeight: '50vh'}}>
           <PublicRoute
             component={NotFoundPage}
             authenticated={authenticated}
