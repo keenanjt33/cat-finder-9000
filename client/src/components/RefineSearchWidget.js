@@ -276,7 +276,7 @@ class RefineSearchWidget extends React.Component {
 
 const FilterCard = props => {
   return(
-    <div className='inline-block p-1 px-3 mr-3 rounded bg-secondary'>
+    <div className='inline-block p-1 px-3 mr-3 mt-3 rounded bg-secondary'>
       {props.text}
       <svg onClick={props.handleRemove} xmlns='http://www.w3.org/2000/svg' className='inline-block w-5 h-5 mb-1 ml-2 text-gray-800 cursor-pointer hover:text-black' fill='none' viewBox='0 0 24 24' stroke='currentColor'>
         <path strokeLinecap='round' strokeLinejoin='round' strokeWidth={1.5} d='M10 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2m7-2a9 9 0 11-18 0 9 9 0 0118 0z' />
